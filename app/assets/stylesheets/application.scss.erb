@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation
+ *= require foundation_and_overrides
+
+ */
+
+ @import "foundation_and_overrides";
+/* Add imports of custom sass/scss files here */
+
+/* style for foundation zurb top-bar */
+nav.top-bar {
+	overflow: hidden;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	background: #51935c;
+	margin-bottom: 0; 
+}
+.top-bar-section ul li.active > a { 
+	background: #51935c !important;
+	color: white !important;
+}
+
+/* style for testimonial images */
+.testimonial_img {
+	border: 2px solid black;
+	height: 200px;
+	border-radius: 150px;
+	margin-top: -75px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin: 25px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.row {
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+
