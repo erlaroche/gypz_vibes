@@ -18,8 +18,10 @@
 //= require foundation
 //= require_tree .
 
-$(document).on('turbolinks:load', function() {
-    $(function(){ $(document).foundation(); });
-});
+
+
+ window.onload = function() {
+        $(document).foundation();
+};
 
 
